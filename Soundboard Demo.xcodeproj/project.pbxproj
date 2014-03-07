@@ -21,6 +21,14 @@
 		279C801D18C9EE2F0052976D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 279C7FFF18C9EE2F0052976D /* UIKit.framework */; };
 		279C802518C9EE2F0052976D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 279C802318C9EE2F0052976D /* InfoPlist.strings */; };
 		279C802718C9EE2F0052976D /* Soundboard_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C802618C9EE2F0052976D /* Soundboard_DemoTests.m */; };
+		279C803118C9EE770052976D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 279C803018C9EE770052976D /* AVFoundation.framework */; };
+		279C803318C9EEC80052976D /* Sounds.plist in Resources */ = {isa = PBXBuildFile; fileRef = 279C803218C9EEC80052976D /* Sounds.plist */; };
+		279C803A18C9F0430052976D /* drum01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 279C803518C9F0430052976D /* drum01.mp3 */; };
+		279C803B18C9F0430052976D /* drum02.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 279C803618C9F0430052976D /* drum02.mp3 */; };
+		279C803C18C9F0430052976D /* hihat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 279C803718C9F0430052976D /* hihat.mp3 */; };
+		279C803D18C9F0430052976D /* kickdrum.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 279C803818C9F0430052976D /* kickdrum.mp3 */; };
+		279C803E18C9F0430052976D /* snare.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 279C803918C9F0430052976D /* snare.mp3 */; };
+		279C804118C9F09F0052976D /* SoundModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C804018C9F09F0052976D /* SoundModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +61,15 @@
 		279C802218C9EE2F0052976D /* Soundboard DemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Soundboard DemoTests-Info.plist"; sourceTree = "<group>"; };
 		279C802418C9EE2F0052976D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		279C802618C9EE2F0052976D /* Soundboard_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Soundboard_DemoTests.m; sourceTree = "<group>"; };
+		279C803018C9EE770052976D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		279C803218C9EEC80052976D /* Sounds.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Sounds.plist; sourceTree = "<group>"; };
+		279C803518C9F0430052976D /* drum01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = drum01.mp3; sourceTree = "<group>"; };
+		279C803618C9F0430052976D /* drum02.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = drum02.mp3; sourceTree = "<group>"; };
+		279C803718C9F0430052976D /* hihat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hihat.mp3; sourceTree = "<group>"; };
+		279C803818C9F0430052976D /* kickdrum.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kickdrum.mp3; sourceTree = "<group>"; };
+		279C803918C9F0430052976D /* snare.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = snare.mp3; sourceTree = "<group>"; };
+		279C803F18C9F09F0052976D /* SoundModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoundModel.h; path = ../SoundModel.h; sourceTree = "<group>"; };
+		279C804018C9F09F0052976D /* SoundModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SoundModel.m; path = ../SoundModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				279C803118C9EE770052976D /* AVFoundation.framework in Frameworks */,
 				279C7FFE18C9EE2F0052976D /* CoreGraphics.framework in Frameworks */,
 				279C800018C9EE2F0052976D /* UIKit.framework in Frameworks */,
 				279C7FFC18C9EE2F0052976D /* Foundation.framework in Frameworks */,
@@ -101,6 +119,7 @@
 		279C7FFA18C9EE2F0052976D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				279C803018C9EE770052976D /* AVFoundation.framework */,
 				279C7FFB18C9EE2F0052976D /* Foundation.framework */,
 				279C7FFD18C9EE2F0052976D /* CoreGraphics.framework */,
 				279C7FFF18C9EE2F0052976D /* UIKit.framework */,
@@ -117,6 +136,9 @@
 				279C800D18C9EE2F0052976D /* Main.storyboard */,
 				279C801018C9EE2F0052976D /* ViewController.h */,
 				279C801118C9EE2F0052976D /* ViewController.m */,
+				279C803F18C9F09F0052976D /* SoundModel.h */,
+				279C804018C9F09F0052976D /* SoundModel.m */,
+				279C803418C9F0310052976D /* Sounds */,
 				279C801318C9EE2F0052976D /* Images.xcassets */,
 				279C800218C9EE2F0052976D /* Supporting Files */,
 			);
@@ -130,6 +152,7 @@
 				279C800418C9EE2F0052976D /* InfoPlist.strings */,
 				279C800718C9EE2F0052976D /* main.m */,
 				279C800918C9EE2F0052976D /* Soundboard Demo-Prefix.pch */,
+				279C803218C9EEC80052976D /* Sounds.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -150,6 +173,18 @@
 				279C802318C9EE2F0052976D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		279C803418C9F0310052976D /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				279C803518C9F0430052976D /* drum01.mp3 */,
+				279C803618C9F0430052976D /* drum02.mp3 */,
+				279C803718C9F0430052976D /* hihat.mp3 */,
+				279C803818C9F0430052976D /* kickdrum.mp3 */,
+				279C803918C9F0430052976D /* snare.mp3 */,
+			);
+			name = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,8 +263,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				279C803C18C9F0430052976D /* hihat.mp3 in Resources */,
+				279C803E18C9F0430052976D /* snare.mp3 in Resources */,
+				279C803A18C9F0430052976D /* drum01.mp3 in Resources */,
 				279C801418C9EE2F0052976D /* Images.xcassets in Resources */,
 				279C800618C9EE2F0052976D /* InfoPlist.strings in Resources */,
+				279C803D18C9F0430052976D /* kickdrum.mp3 in Resources */,
+				279C803318C9EEC80052976D /* Sounds.plist in Resources */,
+				279C803B18C9F0430052976D /* drum02.mp3 in Resources */,
 				279C800F18C9EE2F0052976D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				279C801218C9EE2F0052976D /* ViewController.m in Sources */,
+				279C804118C9F09F0052976D /* SoundModel.m in Sources */,
 				279C800C18C9EE2F0052976D /* AppDelegate.m in Sources */,
 				279C800818C9EE2F0052976D /* main.m in Sources */,
 			);

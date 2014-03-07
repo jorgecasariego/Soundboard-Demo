@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Sounds</key>
+	<array>
+		<string>snare</string>
+		<string>kickdrum</string>
+		<string>hihat</string>
+		<string>drum02</string>
+		<string>drum01</string>
+	</array>
+</dict>
+</plist>
